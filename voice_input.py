@@ -11,6 +11,7 @@ def listen():
     with mic as source:
         print("Listening...")
         recognizer.adjust_for_ambient_noise(source, duration=0.2)
+        recognizer.pause_threshold = 1
         audio = recognizer.listen(source)
         print("Audio captured!")
 

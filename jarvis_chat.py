@@ -9,8 +9,8 @@ def main():
         try:
             query = listen()
             if query:
-                if query.lower() in ["exit", "quit", "goodbye"]:
-                    speak("Goodbye. See you soon.")
+                if query.lower() in ["exit", "quit", "goodbye", "bye"]:
+                    response = chat_with_ollama(query)
                     break
                 response = chat_with_ollama(query)
                 speak(response)

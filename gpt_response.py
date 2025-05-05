@@ -9,7 +9,7 @@ client = OpenAI(api_key=api_key)
 
 # List to keep track of conversation history
 conversation_history = [
-    {"role": "system", "content": "You are Jarvis, a helpful assistant."}
+    {"role": "system", "content": "You are Jarvis, a concise, helpful assistant. Keep responses humanlike that of a butler."}
 ]
 
 def chat_with_gpt(prompt):
